@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import Freelings from '../../assets/freelings.webp'
 import Logo from '../../assets/logo.webp';
 import Xbacon from '../../assets/x-bacon.webp';
 import Batata from '../../assets/batata.webp';
@@ -13,6 +14,12 @@ import Previsao from '../../assets/previsaoDoTempo.webp';
 import Caseirao from '../../assets/caseirao.webp';
 import Carrinho from '../../assets/car-market.webp';
 import '../Menu/styles.css';
+
+import {
+  Footer,
+  FooterImg,
+  FooterLink
+} from '../../components/Footer/styles'
 
 const Menu = () => {
   const [cart, setCart] = useState([]);
@@ -107,6 +114,16 @@ const Menu = () => {
           ))}
         </section>
       </main>
+
+      <Footer>
+        <FooterLink href="https://www.freelings.com.br" target="blank">
+          <FooterImg src={Freelings}></FooterImg>
+        </FooterLink>
+
+        <FooterLink href="https://www.freelings.com.br" target="blank">
+          &copy; 2024 Freelings. Todos os direitos reservados
+        </FooterLink>
+      </Footer>
     </body>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import FireVideo from '../../assets/burgerVideo.mp4'
+import Freelings from '../../assets/freelings.webp'
 import Logo from '../../assets/logo.webp'
 import Insta from '../../assets/insta.webp'
 import { CSS } from "../../index.css";
@@ -34,6 +35,12 @@ import {
 
 } from '../../components/LandingPageComponents/Buttons/styles'
 
+
+import {
+    Footer,
+    FooterImg,
+    FooterLink
+} from '../../components/Footer/styles'
 
 
 
@@ -77,6 +84,15 @@ const LandingPage = () => {
                 </HeroImageSide>
             </HeroSection>
 
+            <Footer>
+                <FooterLink href="https://www.freelings.com.br" target="blank">
+                    <FooterImg src={Freelings}></FooterImg>
+                </FooterLink>
+
+                <FooterLink href="https://www.freelings.com.br" target="blank">
+                    &copy; 2024 Freelings. Todos os direitos reservados
+                </FooterLink>
+            </Footer>
         </Body>
     )
 }

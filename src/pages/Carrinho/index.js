@@ -2,6 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { CSS } from '../Carrinho/carrinho.css';
 import Logo from '../../assets/logo.webp';
 import CarrinhoImg from '../../assets/car-market.webp'
+import Freelings from '../../assets/freelings.webp'
+
+import {
+    Footer,
+    FooterImg,
+    FooterLink
+} from '../../components/Footer/styles'
 
 const CarrinhoComponent = () => {
     const [carrinho, setCarrinho] = useState([]);
@@ -120,6 +127,16 @@ const CarrinhoComponent = () => {
                     </div>
                 </section>
             </main>
+
+            <Footer>
+                <FooterLink href="https://www.freelings.com.br" target="blank">
+                    <FooterImg src={Freelings}></FooterImg>
+                </FooterLink>
+
+                <FooterLink href="https://www.freelings.com.br" target="blank">
+                    &copy; 2024 Freelings. Todos os direitos reservados
+                </FooterLink>
+            </Footer>
         </body>
     );
 };
