@@ -75,6 +75,7 @@ color: white;
 font-size: 4.5vw;
 max-width: 100%;
 margin-bottom: 20px;
+word-spacing: 0.1rem;
 @media (max-width: 1000px) {
 
   font-size: 8.8vw;
@@ -100,28 +101,36 @@ const AnimateTitle = keyframes`
   }
 `;
 
+export const HeroHighlightBox = styled.div`
+
+position: relative;
+display: inline-block;
+
+`
+
 export const TitleSpan = styled.span`
 
-font-family: 'Archivo Black', 'Lexend', Arial;
+    font-family: 'Archivo Black', 'Lexend', Arial;
     text-transform: uppercase;
     color: #9D0000;
     -webkit-text-stroke: 1px orange;
     position: relative;
 
-    &::after {
+`
+
+export const TitleSpanBg = styled.span`
+    font-family: 'Archivo Black', 'Lexend', Arial;
     position: absolute;
     left: 0;
-    content: 'Hambúrguer!';
+    top: 0;
     color: orange;
     animation: ${AnimateTitle} 1.8s ease-in-out infinite;
     background: -webkit-linear-gradient(#FFE700 , #FF0000);
-    
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}    
 
 `
-
 
 export const HeroP = styled.p`
 

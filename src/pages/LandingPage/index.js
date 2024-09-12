@@ -17,7 +17,9 @@ import {
     HeroTitle,
     TitleSpan,
     HeroInfoSide,
-    HeroImageSide
+    HeroImageSide,
+    HeroHighlightBox,
+    TitleSpanBg
 
 } from './styles'
 
@@ -74,7 +76,14 @@ const LandingPage = () => {
 
             <HeroSection>
                 <HeroInfoSide>
-                    <HeroTitle>Uma Explosão de Sabores em Cada <TitleSpan>HAMBÚRGUER!</TitleSpan></HeroTitle>
+                    <HeroTitle>
+                        <span>Uma Explosão de Sabores em Cada</span>
+                        <HeroHighlightBox>
+                            <TitleSpan>HAMBÚRGUER!</TitleSpan>
+                            <TitleSpanBg>HAMBÚRGUER!</TitleSpanBg>
+                        </HeroHighlightBox>
+            
+                    </HeroTitle>
                     <HeroP>Experimente a combinação perfeita de ingredientes frescos e carnes suculentas em nossos hambúrgueres artesanais.</HeroP>
                     <ButtonLeftSide onClick={makeOrder}>FAZER PEDIDO</ButtonLeftSide>
                 </HeroInfoSide>
